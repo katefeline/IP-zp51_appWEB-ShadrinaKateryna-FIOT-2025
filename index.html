@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ІП-зп51 Шадріна КО</title>
-    <meta name="description" content="Домашня робота із дісципліни Проектування web-застосунків">
+    <meta name="description" content="Контрольна робота із дісципліни Проектування web-застосунків">
     <meta name="robots" content="noindex">
     <meta name="robots" content="nofollow">
     <link rel=stylesheet href="./css/style.css">
@@ -62,10 +62,13 @@
         <div class="container">
             <h2 class="section-title">About Us</h2>
             <article class="about-content">
-                <p>We are a dedicated team committed to providing eco-friendly products that make a difference. Our mission is to promote sustainability and environmental consciousness through quality products.</p>
-                <p>Founded in 2020, we've been serving customers worldwide with products that care for both people and the planet.</p>
-                <blockquote>
+                <div class="about-text-wrapper">
+                    <p class="intro-text">We are a dedicated team committed to providing eco-friendly products that make a difference. Our mission is to promote sustainability and environmental consciousness through quality products.</p>
+                    <p class="history-text">Founded in 2020, we've been serving customers worldwide with products that care for both people and the planet.</p>
+                </div>
+                <blockquote class="quote-highlight">
                     <em>"Sustainability is not just a trend, it's our responsibility."</em>
+                    <cite class="quote-author">- EcoShop Team</cite>
                 </blockquote>
             </article>
         </div>
@@ -77,21 +80,45 @@
         <div class="container">
             <h3 class="section-title">Our Products</h3>
             <div class="products-grid">
-                <div class="product-card">
-                    <h4>Reusable Bags</h4>
-                    <span class="price">$15.99</span>
-                    <p>Durable and stylish bags for everyday use</p>
-                </div>
-                <div class="product-card">
-                    <h4>Bamboo Utensils</h4>
-                    <span class="price">$12.50</span>
-                    <p>Eco-friendly alternative to plastic cutlery</p>
-                </div>
-                <div class="product-card">
-                    <h4>Solar Chargers</h4>
-                    <span class="price">$45.00</span>
-                    <p>Charge your devices with clean energy</p>
-                </div>
+                <article class="product-card" id="product-bags">
+                    <div class="product-header">
+                        <h4 class="product-title">Reusable Bags</h4>
+                        <span class="badge eco-badge">Eco-Friendly</span>
+                    </div>
+                    <div class="product-body">
+                        <span class="price">$15.99</span>
+                        <p class="product-description">Durable and stylish bags for everyday use</p>
+                    </div>
+                    <div class="product-footer">
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card" id="product-utensils">
+                    <div class="product-header">
+                        <h4 class="product-title">Bamboo Utensils</h4>
+                        <span class="badge eco-badge">Eco-Friendly</span>
+                    </div>
+                    <div class="product-body">
+                        <span class="price">$12.50</span>
+                        <p class="product-description">Eco-friendly alternative to plastic cutlery</p>
+                    </div>
+                    <div class="product-footer">
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card" id="product-chargers">
+                    <div class="product-header">
+                        <h4 class="product-title">Solar Chargers</h4>
+                        <span class="badge eco-badge">Eco-Friendly</span>
+                    </div>
+                    <div class="product-body">
+                        <span class="price">$45.00</span>
+                        <p class="product-description">Charge your devices with clean energy</p>
+                    </div>
+                    <div class="product-footer">
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
             </div>
             <ul class="product-features">
                 <li>100% Sustainable Materials</li>
@@ -159,16 +186,25 @@
     <section class="team-section" id="team">
         <div class="container">
             <h2 class="section-title">Our Team</h2>
-            <dl class="team-list">
-                <dt>Sarah Johnson</dt>
-                <dd>Founder & CEO - Visionary leader with 10 years experience in sustainable business</dd>
-                
-                <dt>Michael Chen</dt>
-                <dd>Head of Operations - Expert in supply chain management and logistics</dd>
-                
-                <dt>Emily Rodriguez</dt>
-                <dd>Product Designer - Creative mind behind our innovative eco-friendly designs</dd>
-            </dl>
+            <figure class="team-container">
+                <dl class="team-list">
+                    <div class="team-member" id="member-sarah">
+                        <dt class="member-name">Sarah Johnson</dt>
+                        <dd class="member-role">Founder & CEO - Visionary leader with 10 years experience in sustainable business</dd>
+                    </div>
+                    
+                    <div class="team-member" id="member-michael">
+                        <dt class="member-name">Michael Chen</dt>
+                        <dd class="member-role">Head of Operations - Expert in supply chain management and logistics</dd>
+                    </div>
+                    
+                    <div class="team-member" id="member-emily">
+                        <dt class="member-name">Emily Rodriguez</dt>
+                        <dd class="member-role">Product Designer - Creative mind behind our innovative eco-friendly designs</dd>
+                    </div>
+                </dl>
+                <figcaption class="team-caption">Meet the passionate people behind EcoShop</figcaption>
+            </figure>
             <aside class="team-note">
                 <strong>Note:</strong> Our team is growing! Check our careers page for opportunities.
             </aside>

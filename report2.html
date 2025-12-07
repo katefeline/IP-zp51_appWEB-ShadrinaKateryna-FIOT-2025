@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report 2 - EcoShop</title>
+    <meta name="description" content="Контрольна робота із дісципліни Проектування web-застосунків">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <link rel=stylesheet href="./css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="EcoShop Logo" id="site-logo">
+            <h1 id="site-logo">EcoShop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" class="search-input" placeholder="Search products...">
+        </div>
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="dropdown">
+                    <a href="index.html#products" class="dropdown-toggle">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#reusable-bags">Reusable Bags</a></li>
+                        <li><a href="index.html#bamboo-utensils">Bamboo Utensils</a></li>
+                        <li><a href="index.html#solar-chargers">Solar Chargers</a></li>
+                        <li><a href="index.html#all-products">View All</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="about-section">
+        <div class="container">
+            <div class="report-heading">
+                <h1>Висновки до Лабораторної роботи №2</h1>
+            </div>
+            <div class="report-content">
+                <h2>Для чого використовуються каскадні таблиці стилів (CSS)?</h2>
+        
+                <p><strong>CSS (Cascading Style Sheets)</strong> — це мова, яка відповідає за візуальне представлення документів, написаних мовою розмітки (найчастіше HTML). Якщо HTML — це «скелет» сторінки (структура), то CSS — це її «одяг» (зовнішній вигляд).</p>
+
+                <h2>Основні функції CSS:</h2>
+                
+                <ul>
+                    <li>
+                        <strong>Розділення змісту та оформлення:</strong>
+                        Це дозволяє змінювати дизайн сайту без редагування HTML-коду кожної сторінки. Ви можете змінити один CSS-файл, і вигляд усього вебсайту оновиться.
+                    </li>
+                    <li>
+                        <strong>Керування макетом:</strong>
+                        CSS дозволяє розміщувати елементи в потрібних місцях: створювати колонки, сітки (Grid), гнучкі контейнери (Flexbox), фіксувати меню зверху тощо.
+                    </li>
+                    <li>
+                        <strong>Стилізація тексту та кольорів:</strong>
+                        Зміна шрифтів, розміру тексту, міжрядкових інтервалів, кольору фону та тексту. Наприклад, цей текст відображається шрифтом <code>Segoe UI</code> завдяки CSS.
+                    </li>
+                    <li>
+                        <strong>Адаптивність:</strong>
+                        За допомогою медіа-запитів CSS дозволяє сайту виглядати гарно на будь-яких пристроях: від великих моніторів до смартфонів.
+                    </li>
+                    <li>
+                        <strong>Анімація та інтерактивність:</strong>
+                        Створення ефектів при наведенні миші, плавних переходів, анімації елементів без використання JavaScript.
+                    </li>
+                </ul>
+                <hr>
+                <h2>Які методи визначення стилів HTML-документі ви знаєте</h2>
+                <p>Існує три основні методи додавання стилів (CSS) до HTML-документа. Вони відрізняються пріоритетністю виконання та зручністю підтримки коду.</p>
+                <ul>
+                    <li>
+                        Зовнішні стилі (External Style Sheet). Це професійний стандарт і найкращий спосіб для розробки вебсайтів. Стилі зберігаються в окремому файлі з розширенням .css, який підключається до HTML-документа, використовуючи тег <code>&lt;link&gt;</code> всередині секції <code>&lt;head&gt;&lt;/head&gt;</code>.
+                    </li>
+                    <li>
+                        Внутрішні стилі (Internal Style Sheet). Стилі пишуться безпосередньо в HTML-файлі, але виокремлюються в спеціальний блок, використовуючи тег <code>&lt;style&gt;</code> всередині секції <code>&lt;head&gt;&lt;/head&gt;</code>.
+                    </li>
+                    <li>
+                        Вбудовані стилі (Inline Styles). Стилі додаються безпосередньо до окремих HTML-елементів за допомогою атрибута <code>style</code>. Цей метод має найвищий пріоритет, але його важко підтримувати при великій кількості елементів.
+                    </li>
+                </ul>
+                <hr>
+                <h2>У чому різниця між принципами каскадування і спадкування?.</h2>
+                <p>Спадкування (Inheritance) стосується того, як елементи отримують властивості від своїх батьків (зв'язок «згори вниз» по структурі HTML).Це процес, коли дочірній елемент (child) автоматично переймає певні стилі від свого батьківського елемента (parent).</p>
+                <p>Каскадування (Cascading) стосується того, як браузер вирішує конфлікти, коли до одного й того ж елемента застосовується кілька різних правил. Це алгоритм, за яким браузер визначає, яке правило є «головнішим», якщо до одного елемента застосовано кілька суперечливих стилів.</p>
+                <ul>
+                    Три фактори, що впливають на каскадування:
+                    <li>
+                        <strong>Специфічність (Specificity):</strong>
+                        Чим більш специфічне правило, тим вищий його пріоритет. Наприклад, селектор класу (.class) має вищу специфічність, ніж селектор тегу (div).
+                    </li>
+                    <li>
+                        <strong>Порядок визначення (Source Order):</strong>
+                        Якщо два правила мають однакову специфічність, то перевага надається тому, яке визначене пізніше в коді.
+                    </li>
+                    <li>
+                        <strong>Важливість (Importance):</strong>
+                        Правила з позначкою !important мають найвищий пріоритет і переважають над іншими.
+                    </li>
+                </ul>
+                <hr>
+                <h2>Як в HTML-документі оформлюються селектори тегу і клас?.</h2>
+                <p>Селектори тегу використовуються для вибору всіх елементів певного типу, наприклад, <code>div</code> або <code>p</code>. Селектори класу використовуються для вибору елементів з певним атрибутом класу, наприклад, <code>.classname</code>. Селектори класу починаються з крапки (.), а селектори тегу просто вказують ім'я тегу.</p>
+                <p>Селектор Класу використовується, коли треба стилізувати конкретну групу елементів незалежно від їхнього тегу.</p>
+                <hr>
+                <h2>Для чого використовується ідентифікатор?</h2>
+                <p>Селектор id використовується для вибору конкретного елемента за його унікальним ідентифікатором, наприклад, <code>#header</code>. Ідентифікатори повинні бути унікальними в межах документа.</p>
+                <hr>
+                <h2>Навести приклади оформлення текстових елементів.</h2>
+                <p>
+                    HTML використовує такі елементи, як <code>&lt;b&gt;</code> та <code>&lt;i&gt;</code> для форматування виведення, наприклад жирний або курсивний текст.</p>
+
+<p>Елементи форматування були розроблені для відображення спеціальних типів тексту:</p>
+
+<p><b> - Жирний текст </b></p>
+<p><strong> - Важливий текст (виділяється жирним) </strong></p>
+<p><i> - Курсивний текст </i></p>
+<p><em> - Важливий текст (виділяється курсивом) </em></p>
+<p><mark> - Помічений (маркований) текст </mark></p>
+<p><small> - Маленький текст </small></p>
+<p><del> - Видалений текст </del></p>
+<p><ins> - Вставлений текст </ins></p>
+<p><sub> - Підрядковий текст (нижній індекс) </sub></p>
+<p><sup> - Надрядковий текст (верхній індекс)</sup></p>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer" id="contact">
+    <div class="container">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    <p><strong>Email:</strong> <a href="mailto:info@ecoshop.com">info@ecoshop.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p><strong>Address:</strong> 123 Green Street, Eco City, EC 12345</p>
+                </address>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="index.html">Back to Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy; 2025 EcoShop. All rights reserved.</small>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
